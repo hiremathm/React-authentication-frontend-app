@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
-export default class HOme extends Component {
+import Registration from './auth/registration'
+export default class Home extends Component {
   render() {
     return (
       <div className='home'>
-      	<h1>Home</h1>
-      	<h1>Home</h1>
+      	<h1>Registeration : <br/><br/></h1>
+      	<Registration/>
       </div>
     );
   }
