@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
 const Dashboard = (props) => {
+	// handleLoggedOutClick = () => {
+	// 	props.handleLoggedOut()
+	// }
     return (
     	<div>
-    		<div>
-    			<h1>Welcome to Dashboard</h1>
-    		</div>
+			<h1>Welcome to Dashboard</h1>
+			<h3>Status: {props.status}</h3>
+			<h2><button onClick={props.handleLoggedOut}>Logout</button></h2>    		
     	</div>
     );
 }
